@@ -1,5 +1,5 @@
 class SinchService
-  attr_reader :header
+
   SEND_MSG_URL = "https://sms.api.sinch.com/xms/v1/#{Rails.application.secrets.sinch_service_plan_id}/batches"
 
   def self.send_message(recipient, msg)
